@@ -1,4 +1,4 @@
-# proof-diagram
+# proof-visualizer
 Visualize Fitch styled proofs in the form of argument diagrams with proof validation.  Project created for Bram van Heuveln's Intermediate Logic course.
 
 ###What are Arugument Diagrams?
