@@ -1,8 +1,10 @@
 {
-  "name": "temp",
+  "name": "proof-visualizer",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Visualize Fitch styled proofs in the form of argument diagrams with proof validation.",
   "main": "main.js",
+  "repository": "https://github.com/sihsob/proof-visualizer.git",
+  "license": "MIT",
   "scripts": {
     "start": "electron ."
   },
