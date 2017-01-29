@@ -1,0 +1,82 @@
+#myDiagramDiv {
+    width:400px;
+    height:150px;
+    background-color: #DAE4E4;
+}
+
+body {
+    margin-top:50px;
+}
+
+.menuBar {
+    background-color: #1e9abf;
+    width:100%;
+    height:50px;
+    display:block;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.nav-title {
+    color: white;
+    padding: 10pt;
+    top: 10px;
+    left: 10px;
+    float:left;
+}
+
+.nav-block {
+    display: inline;
+    padding: 10pt
+}
+
+.btn-primary-custom {
+    margin: 5px;
+    float: left;
+    display: inline;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #1e9abf;
+    text-shadow: none;
+    border: 1px solid #1e9abf;
+}
+
+.btn-primary-custom:hover {
+    border-radius: 5px;
+    color: white;
+    background-color: #1e9abf;
+    text-shadow: none;
+    border: 1px solid #fff;
+}
+
+.btn-primary-custom:active:focus {
+    border-radius: 5px;
+    background-color: #1d7f9d;
+    color: white;
+    text-shadow: none;
+    border: 1px solid #fff;
+}
+
+.dropdown {
+    margin: 5px;
+    float: left;
+    width: 150px;
+    height: 50px;
+}
+
+.dropdown-toggle {
+    border-radius: 5px;
+    background-color: #fff;
+    color: #1e9abf;
+    text-shadow: none;
+    border: 1px solid #1e9abf;
+}
+
+.dropdown-toggle:hover {
+    border-radius: 5px;
+    color: white;
+    background-color: #1e9abf;
+    text-shadow: none;
+    border: 1px solid #fff;
+}

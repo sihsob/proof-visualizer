@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS for Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <!-- REPLACE CNDJS LINK TO PAPER WITH LOCAL LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.25/paper-core.min.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+    	// Create a Paper.js Path to draw a line into it:
+    	var path = new Path();
+    	// Give the stroke a color
+    	path.strokeColor = 'black';
+    	var start = new Point(100, 100);
+    	// Move to start and draw a line from there
+    	path.moveTo(start);
+    	// Note the plus operator on Point objects.
+    	// PaperScript does that for us, and much more!
+    	path.lineTo(start + [ 100, -50 ]);
+    </script>
+</head>
+<body>
+    <div class="menuBar">
+        <div class="nav-title"
+            <a class="title" href="index.html">Proof Diagram</a>
+        </div>
+        <div class="nav-block">
+            <button class="btn btn-primary-custom btn-create-node">Create Node</button>
+            <button class="btn btn-primary-custom btn-attach-refs">Attach References</button>
+            <div class="dropdown">
+                <button class="form-control btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Inference Rule
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#"> Reiteration </a></li>
+                    <li><a href="#">Or Intro </a></li>
+                    <li><a href="#">Or Elim </a></li>
+                    <li><a href="#">And Intro </a></li>
+                    <li><a href="#">And Elim </a></li>
+                    <li><a href="#">Not Intro </a></li>
+                    <li><a href="#">Not Elim </a></li>
+                    <li><a href="#">Contradiction Intro </a></li>
+                    <li><a href="#">Contradiction Elim </a></li>
+                    <li><a href="#">Implication Intro </a></li>
+                    <li><a href="#">Implication Elim </a></li>
+                    <li><a href="#">Biconditional Intro </a></li>
+                    <li><a href="#">Biconditional Elim </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   <div class="container">
+     <div>
+         <canvas id="myCanvas" resize></canvas>
+     </div>
+   </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+    <script src="./js/control.js"></script>
+</body>
+</html>
